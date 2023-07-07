@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+.mainbody{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0,.1);
+}
+.mainbody .leftside{
+    position: relative;
+    background: darkgray;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBX{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBX img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h1{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h1 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.info{
+    padding-top: 40px;
+}
+.tittle{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.info ul{
+    position: relative;
+}
+.info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.info ul li .icon{
+    display: inline-block;
+    width: 30%;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.info ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.info.education li{
+    margin-bottom: 15px;
+}
+.info.education h5{
+    font-weight: 500;
+    color: #03a9f4;
+}
+.info.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+.info.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.info.languag .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.info.languag .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.mainbody .rightside{
+    position: relative;
+    background: white;
+    padding: 40px;
+}
